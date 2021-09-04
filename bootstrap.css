@@ -1,0 +1,153 @@
+/*====================slider css=====================*/
+.slider-banner{
+    width: 85%;
+    margin-left: 15%;
+}
+.slider img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+   
+
+}
+.carousel-indicators{
+    z-index: 1 !important;
+
+}
+@media only screen and (max-width: 980px){
+    .slider-banner{
+        width: 100%;
+        margin-left: 0;
+    }
+    .slider img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/*==========side menu nav==========*/
+/*side menu*/
+#menu-btn{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #131921;
+}
+/*side menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #131921;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 10;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #d69302;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/*==========side menu nav==========*/
+
+
+/*=============super hero product===============*/
+.superhero-item{
+    display: inline-block;
+    text-align: center;
+    width: 210px;
+    height: 260px;
+    border: 1px solid rgb(219, 217, 217);
+    margin-bottom: 5px;
+}
+.superhero-item img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.superhero-item:hover{
+    transform:scale(1.05);
+
+    transition: transform 1s;
+}
+
+.superhero-item:hover{
+   /* border: 1px solid rgb(25, 31, 31); */
+    box-shadow: 1px 4px 10px 1px #818181;
+}
+#b-merch{
+    color: #d69302;
+}
+.price{
+    color: #d69302;
+}
+strike{
+color:#131921;
+}
+.superhero h1{
+    text-align: center;
+    color: #131921;
+}
+.Stitle{
+    color: #d69302;
+}
+
+@media only screen and (max-width: 980px){
+    .superhero-item{
+        width: 45%;
+        height: auto;
+        display: inline-block;
+
+    }
+    .superhero{
+        margin-left: 5px;
+
+    }
+    #Bikesh-logo-tshirt{
+        width: 150px;
+        height: 200px;
+    }
+}
+
+
+/*men's fahion*/
+.card{
+    display: inline-block;
+    width: 70%;
+}
+/*men's fahion*/
+/*=============super hero product===============*/
+/*==============footer===================*/
+.footer{
+    background-color: #131921;
+    height: 200px;
+    margin-top: 50px;
+    color: #d69302;
+
+}
+/*==============footer===================*/

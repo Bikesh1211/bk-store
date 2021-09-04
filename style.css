@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*top nav bar*/
+.top-nav-bar{
+    height: 57px;
+    top: 0;
+    position: sticky;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #131921;
+    z-index: 2;
+    background-color: #ffffff;
+    
+}
+.logo{
+    height: 70px;
+    width: auto;
+    margin: -8px 10px;
+}
+.form-control{
+    margin-top: 9px;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none;
+    
+}
+.input-group-text{
+    background: rgb(228, 140, 9) !important;
+    margin: 8.9px 8.9px 9.3px 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    cursor: pointer;
+
+}   
+ /*search btn for mobile*/
+ @media only screen and (max-width:980px){
+    .input-group-text{
+        margin: 8.9px 8.9px 7px 0 !important;
+    }
+
+}
+ /*search btn for mobile*/
+.search-box{
+    display: inline-flex;
+    width: 70%;
+}
+.fa-search{
+    color: azure;
+}
+/*menu bar*/
+.menu-bar{
+    width: 30%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li {
+    border-left: 1px solid azure;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: #131921;
+    cursor: pointer;
+}
+.menu-bar ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: azure;
+
+}
+.menu-bar ul li a:hover{
+    color: #d69302;
+}
+.fa-user-o{
+    margin-right: 1px;
+}
+
+/*top nav bar*/
+/*=====================Form Mobile phone===============*/
+@media only screen and (max-width:980px){
+    .top-nav-bar{
+        height: 122px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px;
+        width: 100%;
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    }
+    .Categories{
+        display: none;
+    }
+}
+/*=====================Form Mobile phone===============*/
+/*=====================Form Mobile phone===============*/
+
+/*===============sidemenu==============*/
+/*----sidemenu
+.side-menu{
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    z-index: 2;
+    background-color: aqua;
+}
+.side-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side-menu ul li:hover{
+    color: rgb(255, 255, 255);
+}
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    background: rgb(38, 223, 121);
+    position: fixed;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+
+}
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+
+/*sidemenu for mobile*/   
+/*----side menu
+@media only screen and (max-width: 980px){
+    .side-menu{
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+    }
+    .side-menu ul li ul{
+        top: 133px;
+    }
+    .side-menu ul li:hover ul{
+        margin-left: 33%;
+    }    
+}
+
+
+/*sidemenu for mobile*/
+
+/*===============sidemenu==============*/
+
+/*=============slider css===================*/
+.slider{
+    width: 100%;
+    height: 50%;
+    padding: 0 10px;
+}
+
+/*mobile slider*/
+@media only screen and (max-width:980px){
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+/*mobile slider*/
+/*=============slider css===================*/
+
+/*feautres categoreis css*/
+.featured-categories img{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.Categories-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: blueviolet;
+  }
+.featured-categories img:hover{
+    transform: scale(1.1);
+}
+/*feautres categoreis css*/
+
+/*on sale product css*/
+.title-box{
+    background: rgb(12, 64, 141);
+    width: 180px;
+    padding: 4px 10px;
+    margin-bottom: 30px;
+    display: flex;
+    
+}
+.title-box h2{
+    font-size: 24px;
+}
+.title-box::after{
+    content: '';
+    border-top: 40px solid rgb(1, 31, 31);
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+/*on sale product css*/
+
+/*product img css*/
+.product-top img{
+    width: 100%;
+}
+.overlay-right{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+.overlay-right .fa{
+    cursor: pointer;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right .btn-secondary{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product-top:hover{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+/*product img css*/
+
+/*=====================top categoreis*/
+.Categories{
+    height: 79%;
+    width: 40%;
+    font-size: 14px;
+    z-index: 2;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.Categories ul li{
+    list-style-type: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.all-categories{
+    opacity: 0;
+}
+.Categories ul li:hover{
+    color: #d69302;
+}
+.Categories ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.Categories ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-top: -3%;
+    padding: 0 10px 10px 10px;
+    background: #131921;
+    position: fixed;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+    width: 15%;
+    color: aliceblue;
+}
+.Categories ul li ul li:hover{
+    color: #d69302;
+}
+.Categories ul li ul{
+    position: absolute;
+}
+/*top categoreis*/
